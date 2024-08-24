@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Site de Advogados</title>
+    <title>BlackDoc.</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="style.css" />
     <link
@@ -15,7 +15,7 @@
   <body>
     <!-- Navbar -->
     <nav class="header navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">BlackDoc.</a>
+      <img alt="logo da black doc, serviços paralegais" class="nav-logo" src="./assets/imgs/Logotipo_Black_doc.png" class="navbar-brand" href="#"></img>
       <button
         class="navbar-toggler"
         type="button"
@@ -45,60 +45,232 @@
     <!-- Banner -->
     <header class="jumbotron jumbotron-fluid text-center bg-primary text-white">
       <div class="header-container">
-        <h1 class="display-4">BlackDoc.</h1>
-        <p class="lead">Serviços Paralegais</p>
-        <p class="lead">
-          Deixe conosco a parte operacional dos seus processos de abertura,
-          alteração, encerramento
-        </p>
+        <img alt="logo da black doc, serviços paralegais" class="logo" src="./assets/imgs/Logotipo_Black_doc.png" class="navbar-brand" href="#">
+      </img>
+      <p class="lead">
+        Deixe conosco a parte operacional dos seus processos de abertura,
+        alteração, encerramento
+      </p>
       </div>
     </header>
 
     <!-- Sobre -->
-    <section id="sobre" class="container my-5">
-      <h2 class="text-center mb-4">Sobre Nós</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-        erat a ante.
-      </p>
+    <section id="sobre" class="sobre-container">
+      <article>
+        <h2 >O que fazemos?</h2>
+        <p>Somos especialistas em regularização de empresas.</p>
+        <p>
+          A BLACKDOC. Serviços Paralegais, é uma empresa especializada na
+          regularização fiscal e cadastral junto aos órgãos públicos e
+          autarquias em todo território nacional. Surgimos diante das
+          burocracias governamentais para oferecer serviços paralegais e
+          societários para departamentos jurídicos, fiscais, escritórios de
+          contabilidade e advocacia, contadores independentes e empresários.
+          Temos mais de onze anos de experiência prestando apoio jurídico e
+          administrativo para empresas de pequeno, médio e grande porte.
+          Acreditamos que para abertura, desenvolvimento e o encerramento de
+          qualquer empresa é imprescindível o trabalho de profissionais da área
+          paralegal.
+        </p>
+      </article>
     </section>
 
     <!-- Nossos Serviços -->
-    <section id="servicos" class="bg-light py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Nossos Serviços</h2>
+    <section id="servicos" class="bg-light servicos-section">
+      <h2 class="services-title">Alguns dos nossos Serviços</h2>
+      <div class="cards-container my-5">
         <div class="row">
+          <!-- Card 1 -->
           <div class="col-md-4">
             <div class="card mb-4">
               <div class="card-body">
-                <h5 class="card-title">Consultoria Jurídica</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <h5 class="card-title">Serviços Societários</h5>
+                <div id="cardContent1" class="card-content">
+                  <ul class="styled-list">
+                    <li>
+                      Abertura, alteração e encerramento de empresas em todo
+                      território nacional;
+                    </li>
+                    <li>Abertura, alteração e encerramento de filiais;</li>
+                    <li>Abertura, alteração e baixa de CNPJ estrangeiro;</li>
+                    <li>
+                      Arquivamento de atos societários diversos em juntas
+                      comerciais e cartórios de pessoas jurídicas;
+                    </li>
+                    <li>Elaboração de atos societários;</li>
+                    <li>Atendimento de exigências;</li>
+                    <li>Emissão de DBE's;</li>
+                    <li>Registro digital;</li>
+                    <li>Correção de NIRE;</li>
+                    <li>
+                      Publicação de Atos Societários em jornais de grande
+                      circulação e Diários Oficiais (Estados e União);
+                    </li>
+                    <li>Publicação de Demonstrações Financeiras anuais;</li>
+                  </ul>
+                  <div class="fade-out"></div>
+                  <!-- Degrade no final da lista -->
+                </div>
+                <button
+                  data-target="#cardContent1"
+                  class="btn btn-primary btn-toggle"
+                >
+                  Expandir
+                </button>
               </div>
             </div>
           </div>
+
+          <!-- Card 2 -->
           <div class="col-md-4">
             <div class="card mb-4">
               <div class="card-body">
-                <h5 class="card-title">Representação Legal</h5>
-                <p class="card-text">
-                  Vestibulum ante ipsum primis in faucibus orci luctus et
-                  ultrices.
-                </p>
+                <h5 class="card-title">Serviços Fiscais</h5>
+                <div id="cardContent2" class="card-content">
+                  <ul class="styled-list">
+                    <li>
+                      Procedimentos diversos e aberturas de processos perante a
+                      Receita Federal;
+                    </li>
+                    <li>
+                      Indicação de beneficiário final de sociedades brasileiras
+                      e estrangeiras;
+                    </li>
+                    <li>
+                      Obtenção/atualização/ baixa de inscrições estaduais;
+                    </li>
+                    <li>
+                      Obtenção/atualização/ baixa de inscrições municipais;
+                    </li>
+                    <li>
+                      Obtenção/atualização/ baixa de inscrições junto ao
+                      cadastro INSS;
+                    </li>
+                    <li>
+                      Obtenção/Atualização/baixa de inscrições junto ao cadastro
+                      FGTS;
+                    </li>
+                    <li>
+                      Obtenção/atualização/ baixa de inscrição Estadual de DIFAL
+                      e Substituto Tributário;
+                    </li>
+                  </ul>
+                  <div class="fade-out"></div>
+                  <!-- Degrade no final da lista -->
+                </div>
+                <button
+                  data-target="#cardContent2"
+                  class="btn btn-primary btn-toggle"
+                >
+                  Expandir
+                </button>
               </div>
             </div>
           </div>
+
+          <!-- Card 3 -->
           <div class="col-md-4">
             <div class="card mb-4">
               <div class="card-body">
-                <h5 class="card-title">Contratos e Documentos</h5>
-                <p class="card-text">
-                  Suspendisse potenti. Morbi mattis ullamcorper velit.
-                </p>
+                <h5 class="card-title">Serviços de Certificações</h5>
+                <div id="cardContent3" class="card-content">
+                  <ul class="styled-list">
+                    <li>
+                      Participação em projetos de Due Diligence, com obtenção e
+                      controle de certidões administrativas, forenses e
+                      imobiliárias;
+                    </li>
+                    <li>Atualização de certidões;</li>
+                    <li>
+                      Parcelamento de débitos, para liberação de certidão;
+                    </li>
+                    <li>
+                      Regularização de débitos em todos os órgãos (União,
+                      Estados e Municípios).
+                    </li>
+                  </ul>
+                  <div class="fade-out"></div>
+                  <!-- Degrade no final da lista -->
+                </div>
+                <button
+                  data-target="#cardContent3"
+                  class="btn btn-primary btn-toggle"
+                >
+                  Expandir
+                </button>
               </div>
             </div>
           </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Regularização de Imóveis</h5>
+                <div id="cardContent4" class="card-content">
+                  <ul class="styled-list">
+                    <li>Regularização e registro de imóveis;</li>
+                    <li>Atualização de matrícula;</li>
+                    <li>Averbação de imóvel;</li>
+                    <li>Certidão atualizada do imóvel;</li>
+                    <li>Certidão de matrícula do imóvel;</li>
+                    <li>Parcelamento de débitos;</li>
+                    <li>Atualização cadastral imobiliária;</li>
+                    <li>Cadastro de Rol nominativo;</li>
+                    <li>Regularização cadastral no INCRA;</li>
+                  </ul>
+                  <div class="fade-out"></div>
+                  <!-- Degrade no final da lista -->
+                </div>
+                <button
+                  data-target="#cardContent4"
+                  class="btn btn-primary btn-toggle"
+                >
+                  Expandir
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Serviços de Tradução</h5>
+                <div id="cardContent5" class="card-content">
+                  <ul class="styled-list">
+                    <li>
+                      Tradução/versão livre e juramentada em diversos idiomas.
+                      Isso inclui documentos legais, contratos, relatórios,
+                      certificados, entre outros.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Regulatório</h5>
+                <div id="cardContent6" class="card-content">
+                  <ul class="styled-list">
+                    <li>Renovação de Alvará de Funcionamento;</li>
+                    <li>
+                      Emissão e Renovação de CLI - Certificado de Licenciamento
+                      Integrado;
+                    </li>
+                    <li>Licença operacional da CETESB;</li>
+                    <li>Renovação de AVCB/CLCB;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Adicione mais cards conforme necessário -->
         </div>
       </div>
     </section>
