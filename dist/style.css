@@ -22,7 +22,7 @@ body {
   transition: transform 0.3s ease;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  min-height: 17.6rem;
+  min-height: 18.6rem;
 }
 
 .cards-section {
@@ -74,6 +74,9 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  border: 1px solid rgb(221, 221, 221);
+  background-color: white;
+  border-radius: 8px;
 }
 
 .article-img {
@@ -289,7 +292,7 @@ article {
 
 .cards-container {
   margin: 0px auto;
-  max-width: 1600px;
+  max-width: 1870px;
 }
 
 .carousel-item img {
@@ -303,7 +306,7 @@ article {
   transition: max-height 0.8s ease;
 }
 .card-content.expanded {
-  max-height: 1000px;
+  max-height: 1500px;
 }
 
 ul.styled-list li {
@@ -311,6 +314,7 @@ ul.styled-list li {
   padding-left: 23px;
   margin-bottom: 10px;
   line-height: 1.6;
+  font-size: 22px;
 }
 
 ul.styled-list li::before {
@@ -319,7 +323,7 @@ ul.styled-list li::before {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 20px;
+  font-size: 25px;
   color: #000000;
 }
 
@@ -360,6 +364,7 @@ li {
   width: 100%;
   text-align: center;
   margin-top: 10px;
+  font-size: 20px !important;
 }
 
 .services-title {
@@ -371,6 +376,10 @@ li {
   font-family: sans-serif;
   font-size: x-large;
   font-weight: 700;
+  font-size: 1.7rem;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
 }
 
 .text-footer {
@@ -556,4 +565,8 @@ body {
 
 *:focus {
   outline: none !important;
+}
+
+.center {
+  text-align: center;
 }

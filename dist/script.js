@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
 const slider = document.querySelector(".slider");
 const leftButton = document.querySelector(".left-button");
 const rightButton = document.querySelector(".right-button");
