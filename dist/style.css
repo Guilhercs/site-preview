@@ -57,6 +57,7 @@ nav.navbar {
 
 footer {
   background-color: #333;
+  min-height: 30vh;
 }
 
 footer p {
@@ -94,11 +95,11 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  max-width: 535px;
+  max-width: 325px;
 }
 
 .servicos-section {
-  padding-top: 75px;
+  padding-top: 100px;
   min-height: 100vh;
   margin: auto;
 }
@@ -292,7 +293,7 @@ article {
 
 .cards-container {
   margin: 0px auto;
-  max-width: 1870px;
+  max-width: 1370px;
 }
 
 .carousel-item img {
@@ -336,10 +337,6 @@ li {
   overflow: hidden; /* Oculta o conteúdo que excede a altura */
   position: relative;
   transition: max-height 0.5s ease-out; /* Adiciona transição suave */
-}
-
-.card-content.expanded {
-  max-height: 1000px; /* Define a altura quando expandido, ajustável conforme necessário */
 }
 
 .fade-out {
@@ -477,9 +474,9 @@ body {
   }
 
   .header-subtitle {
-    margin-top: -70px;
+    margin-top: -50px;
     text-align: justify;
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 
