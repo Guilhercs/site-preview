@@ -315,7 +315,7 @@ ul.styled-list li {
   padding-left: 23px;
   margin-bottom: 10px;
   line-height: 1.6;
-  font-size: 22px;
+  font-size: 1rem;
 }
 
 ul.styled-list li::before {
@@ -373,7 +373,6 @@ li {
   font-family: sans-serif;
   font-size: x-large;
   font-weight: 700;
-  font-size: 1.7rem;
   text-align: center;
   padding-bottom: 10px;
   border-bottom: 1px solid lightgrey;
@@ -445,7 +444,7 @@ body {
   border: none;
   padding: 10px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 100;
   font-size: 24px;
   border-radius: 50%;
   background-color: transparent;
@@ -534,6 +533,11 @@ body {
     width: 100%;
   }
 
+  .whatsapp-image {
+    width: auto;
+    height: 4.9rem;
+  }
+
   .header-container {
     max-width: 345px;
   }
@@ -557,6 +561,23 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .title {
+    align-self: center;
+    font-size: 2rem !important;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    text-align: start;
+    font-size: 1.5rem !important;
+  }
+
+  .text {
+    text-align: justify;
+    font-size: 1rem !important;
   }
 }
 
