@@ -315,7 +315,9 @@
     <!-- Contato -->
     <section id="contato" class="container my-5">
       <h2 class="text-center mb-4">Entre em contato</h2>
-      <form>
+      <form action="https://formspree.io/f/xdknbzwn"
+      method="POST">
+        
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputName">Nome</label>
@@ -323,12 +325,14 @@
               type="text"
               class="form-control"
               id="inputName"
+              name="nome"
               placeholder="Seu nome"
             />
           </div>
           <div class="form-group col-md-6">
             <label for="inputEmail">Email</label>
             <input
+              name="email"
               type="email"
               class="form-control"
               id="inputEmail"
@@ -338,7 +342,7 @@
         </div>
         <div class="form-group">
           <label for="inputMessage">Mensagem</label>
-          <textarea class="form-control" id="inputMessage" rows="4"></textarea>
+          <textarea name="message"  class="form-control" id="inputMessage" rows="4"></textarea>
         </div>
         <button type="submit" class="btn btn-card">Enviar</button>
       </form>
@@ -352,30 +356,32 @@
 
     <!-- Footer -->
     <footer class="footer text-white text-center py-3">
-      <div class="footer-logo">
-        <img alt="logo da black doc, serviços paralegais" class="nav-logo" src="./assets/imgs/Logotipo_Black_doc.png" href="#">
-      </div>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img alt="logo da black doc, serviços paralegais" class="footer-img" src="./assets/imgs/Logotipo_Black_doc.png" href="#">
+        </div>
+        
+        <div class="footer-section">
+          <spam class="footer-title">ENDEREÇO:</spam>
+          <p class="footer-description">Alameda Santos, 415 - Vila Mariana, São Paulo - SP</p>
+        </div>
       
-      <div class="footer-section">
-        <spam>ENDEREÇO:</spam>
-        <p>Alameda Santos, 415 - Vila Mariana, São Paulo - SP</p>
-      </div>
-    
-      <div class="footer-section">
-        <spam>ENTRE EM CONTATO:</spam>
-        <p>contatoblackdoc@gmail.com</p>
-        <p>(11) 94922-4857</p>
-      </div>
-    
-      <div class="footer-section">
-        <spam>REDES SOCIAIS:</spam>
-        <a href="https://www.instagram.com/blackdoc.sp/" target="_blank">
-          <img src="./assets/imgs/instagram.png" alt="Instagram">
-        </a>
-      </div>
-    
-      <div class="footer-copy">
-        <p class="text-footer">&copy; 2024 BlackDoc. Todos os direitos reservados.</p>
+        <div class="footer-section">
+          <spam class="footer-title">ENTRE EM CONTATO:</spam>
+          <p class="footer-description">contatoblackdoc@gmail.com</p>
+          <p class="footer-description">(11) 94922-4857</p>
+        </div>
+      
+        <div class="footer-section">
+          <spam class="footer-title">REDE SOCIAL:</spam>
+          <br>
+          <a href="https://www.instagram.com/blackdoc.sp/" target="_blank">
+            <img src="./assets/imgs/instagram.png" alt="Instagram">
+          </a>
+        </div>
+        <div class="footer-copy">
+          <p class="text-footer">&copy; 2024 BlackDoc. Todos os direitos reservados.</p>
+        </div>
       </div>
     </footer>
     

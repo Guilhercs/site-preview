@@ -22,7 +22,7 @@ body {
   transition: transform 0.3s ease;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  min-height: 18.6rem;
+  min-height: 19.6rem;
 }
 
 #servicos .card:hover {
@@ -60,6 +60,11 @@ footer {
     rgba(0, 0, 0, 1)
   ) !important;
   min-height: 30vh;
+  display: flex;
+  align-content: center;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
 }
 
 footer p {
@@ -320,7 +325,7 @@ ul.styled-list li {
   padding-left: 23px;
   margin-bottom: 10px;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 ul.styled-list li::before {
@@ -500,6 +505,14 @@ body {
     text-align: justify;
     font-size: 1.2rem;
   }
+
+  .footer-title {
+    font-size: 1.5rem;
+  }
+
+  .footer-description {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 1159px) {
@@ -549,12 +562,24 @@ body {
   .footer {
     background-image: linear-gradient(
       180deg,
-      rgb(136, 136, 136, 0.3),
-      rgba(0, 0, 0, 0.7),
+      rgb(136, 136, 136, 1),
+      rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 1)
     ) !important;
     min-height: 30vh;
     flex-direction: column; /* Em telas menores, empilhe os itens verticalmente */
+  }
+
+  .footer-container {
+    display: flex;
+    align-content: center;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
   }
 }
 
@@ -624,6 +649,11 @@ body {
     font-size: 1rem !important;
     color: var(--text-color-neutral);
   }
+
+  .footer-img {
+    width: auto;
+    height: 7.5rem !important;
+  }
 }
 
 *:focus {
@@ -636,6 +666,61 @@ body {
 
 .start {
   text-align: start;
+}
+
+.footer-container {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer {
+  color: #fff; /* Cor do texto branco */
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Cria quatro colunas de tamanho igual */
+  gap: 20px; /* Espaçamento entre os itens do grid */
+  align-items: center; /* Centraliza os itens verticalmente */
+  max-width: 1200px; /* Limita a largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente o grid */
+}
+
+.footer-logo {
+  grid-column: 1; /* Coloca o logo na primeira coluna */
+}
+
+.footer-img {
+  width: auto;
+  height: 10rem;
+}
+
+.footer-section {
+  grid-column: auto; /* Mantém as seções nas colunas seguintes */
+}
+
+.footer-copy {
+  grid-column: 1 / -1; /* Faz com que o footer-copy ocupe toda a largura do grid */
+  text-align: center;
+  margin-top: 20px; /* Adiciona espaço acima do texto de copyright */
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* Alinha os itens em uma única coluna em telas menores */
+  }
+
+  .footer-copy {
+    grid-column: 1; /* Mantém o footer-copy ocupando a largura total em telas menores */
+  }
 }
 
 :root {
