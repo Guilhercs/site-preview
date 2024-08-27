@@ -25,9 +25,6 @@ body {
   min-height: 18.6rem;
 }
 
-.cards-section {
-  padding: 24px;
-}
 #servicos .card:hover {
   transform: translateY(-10px);
 }
@@ -56,7 +53,12 @@ nav.navbar {
 }
 
 footer {
-  background-color: #333;
+  background-image: linear-gradient(
+    101deg,
+    rgb(136, 136, 136, 2),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 1)
+  ) !important;
   min-height: 30vh;
 }
 
@@ -102,6 +104,8 @@ header {
   padding-top: 100px;
   min-height: 100vh;
   margin: auto;
+  background-color: var(--background-color-light);
+  padding: 100px 24px 24px 24px;
 }
 
 .servicos-container {
@@ -280,6 +284,7 @@ table {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: var(--background-color-light);
 }
 
 /* .sobre-article {
@@ -315,7 +320,7 @@ ul.styled-list li {
   padding-left: 23px;
   margin-bottom: 10px;
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 ul.styled-list li::before {
@@ -352,16 +357,34 @@ li {
   ); /* Gradiente de fundo */
   pointer-events: none; /* Permite clicar no botão através da área de gradiente */
 }
+
 .card-body {
   padding: 24px !important;
   position: relative;
 }
+
 .btn-toggle {
   display: block;
   width: 100%;
   text-align: center;
   margin-top: 10px;
   font-size: 20px !important;
+}
+
+button.btn-card {
+  border-radius: 8px;
+  background-color: #4f4f4f;
+  border: 1px solid var(--text-color-soft);
+  color: var(--text-color-soft);
+}
+
+button.btn:hover {
+  color: var(--text-color-soft) !important;
+}
+button.btn:focus {
+  color: var(--text-color-soft) !important;
+  outline: none;
+  box-shadow: none;
 }
 
 .services-title {
@@ -522,6 +545,17 @@ body {
     font-size: 1.2rem !important;
     font-weight: 400;
   }
+
+  .footer {
+    background-image: linear-gradient(
+      180deg,
+      rgb(136, 136, 136, 0.3),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 1)
+    ) !important;
+    min-height: 30vh;
+    flex-direction: column; /* Em telas menores, empilhe os itens verticalmente */
+  }
 }
 
 @media (max-width: 480px) {
@@ -576,16 +610,19 @@ body {
     font-size: 2rem !important;
     font-weight: 600;
     line-height: 1.2;
+    color: var(--text-color-neutral);
   }
 
   .subtitle {
     text-align: start;
     font-size: 1.5rem !important;
+    color: var(--text-color-neutral);
   }
 
   .text {
     text-align: justify;
     font-size: 1rem !important;
+    color: var(--text-color-neutral);
   }
 }
 
@@ -595,4 +632,18 @@ body {
 
 .center {
   text-align: center;
+}
+
+.start {
+  text-align: start;
+}
+
+:root {
+  --text-color-soft: #f6f6f6;
+  --text-color-neutral: #000000;
+  --primary-color: #e7e7e7;
+  --secondary-color: #b0b0b0;
+  --background-color-light: #f6f6f6;
+  --background-color-dark: #888888;
+  --border-color: #d1d1d1;
 }
