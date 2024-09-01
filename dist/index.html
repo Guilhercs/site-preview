@@ -9,6 +9,7 @@
     <title>BLACKDOC. Regularização Empresarial</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -86,21 +87,21 @@
        <section class="slider-section">
         <h2 class="title center">Algumas das empresas legalizadas pelo nosso time.</h2>
          <div class="slider-container">
-           <button class="nav-button left-button"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#999999"><path d="M400-80 0-480l400-400 56 57-343 343 343 343-56 57Z"/></svg></button> <!-- Botão Esquerda -->
+           <button class="nav-button left-button" aria-label="esquerda"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#999999"><path d="M400-80 0-480l400-400 56 57-343 343 343 343-56 57Z"/></svg></button> <!-- Botão Esquerda -->
              <div class="slider">
-                 <div class="slide"><img src="./assets/imgs/cliente_logo_accor.png" alt="Image 1"></div>
-                 <div class="slide"><img src="./assets/imgs/cliente_logo_akzonobel.png" alt="Image 1"></div>
-                 <div class="slide"><img src="./assets/imgs/cliente_logo_bluewater.png" alt="Image 1"></div>
-                 <div class="slide"><img src="./assets/imgs/cliente_logo_chamagás.png" alt="Image 1"></div>
-                 <div class="slide"><img src="./assets/imgs/cliente_logo_dissei.png" alt="Image 1"></div>
-                 <div class="slide"><img src="./assets/imgs/cliente_logo_edenred.png" alt="Image 1"></div>
-                 <div class="slide"><img src="./assets/imgs/cliente_logo_fibraexperts.png" alt="Image 1"></div>
-                 <div class="slide"><img src="./assets/imgs/cliente_logo_msd.png" alt="Image 1"></div>
-                 <div class="slide"><img src="./assets/imgs/cliente_logo_tiket.png" alt="Image 1"></div>
+                 <div class="slide"><img loading="lazy" src="./assets/imgs/cliente_logo_accor.png" alt="Image 1"></div>
+                 <div class="slide"><img loading="lazy" src="./assets/imgs/cliente_logo_akzonobel.png" alt="Image 1"></div>
+                 <div class="slide"><img loading="lazy" src="./assets/imgs/cliente_logo_bluewater.png" alt="Image 1"></div>
+                 <div class="slide"><img loading="lazy" src="./assets/imgs/cliente_logo_chamagás.png" alt="Image 1"></div>
+                 <div class="slide"><img loading="lazy" src="./assets/imgs/cliente_logo_dissei.png" alt="Image 1"></div>
+                 <div class="slide"><img loading="lazy" src="./assets/imgs/cliente_logo_edenred.png" alt="Image 1"></div>
+                 <div class="slide"><img loading="lazy" src="./assets/imgs/cliente_logo_fibraexperts.png" alt="Image 1"></div>
+                 <div class="slide"><img loading="lazy" src="./assets/imgs/cliente_logo_msd.png" alt="Image 1"></div>
+                 <div class="slide"><img loading="lazy" src="./assets/imgs/cliente_logo_tiket.png" alt="Image 1"></div>
                 
                  <!-- Adicione mais slides conforme necessário -->
              </div>
-             <button class="nav-button right-button"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#999999"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z"/></svg></button> <!-- Botão Direita -->
+             <button class="nav-button right-button" aria-label="direita"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#999999"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z"/></svg></button> <!-- Botão Direita -->
          </div>  
        </section>
 
@@ -312,13 +313,38 @@
       </div>
     </section>
 
+    <section class="servicos-lista">
+      <div>
+        <div class="servicos-lista-content">
+          <h2 class="title center title-bottom">A BLACKDOC. tem tudo o que seu negócio precisa em legalização de empresas.</h2>
+          <ul class="styled-list lista-content">
+            <li>
+              Mão de obra qualiﬁcada com uma equipe competente e ágil ;
+            </li>
+            <li>
+              Analise técnica de documentos: Ato constitutivo, ACS, ARS, AGO, AGOE, ARCA, Etatuto social e muitos mais;
+            </li>
+            <li>
+              Atuação em todo território Nacional com agilidade e eﬁciência;
+            </li>
+            <li>
+              Expertise em análise técnica de informações ﬁscais obtidas junto a repartições publicas;
+            </li>
+            <li>
+              Revisamos e analisamos obrigações acessórias que se tornem fatores impeditivos para a obtenção de Certidões de Regularidade Fiscal;
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- fundadores -->
     <section class="fundadores-section">
       <div class="fundadores-container">
         <!-- Div Esquerda -->
         <div class="myDivLeft hidden">
           <div class="fundadores-content">
-            <img class="fundador-img" src="./assets/imgs/André Motta.png" alt="Imagem do fundador André Motta, com um sorriso e de braços cruzados. Com roupa social.">
+            <img class="fundador-img" loading="lazy" src="./assets/imgs/André Motta.png" alt="Imagem do fundador André Motta, com um sorriso e de braços cruzados. Com roupa social.">
             <div class="description">
               <!-- Card de Descrição -->
               <div class="card-description">
@@ -344,7 +370,7 @@
         <!-- Div Direita -->
         <div class="myDivRight hidden">
           <div class="fundadores-content">
-            <img class="fundador-img" src="./assets/imgs/Ana Caroline Lourenço.png" alt="Imagem da fundadora Ana Caroline Lourenço, com um sorriso e de braços cruzados. Com roupa social.">
+            <img class="fundador-img" loading="lazy" src="./assets/imgs/Ana Caroline Lourenço.png" alt="Imagem da fundadora Ana Caroline Lourenço, com um sorriso e de braços cruzados. Com roupa social.">
             <div class="description">
               <!-- Card de Descrição -->
               <div class="card-description">
@@ -406,7 +432,7 @@
   <footer class="footer text-white text-center py-3">
     <div class="footer-container">
       <div class="footer-logo">
-        <img alt="logo da black doc, serviços paralegais" class="footer-img" src="./assets/imgs/Logotipo_Black_doc.png" href="#">
+        <img loading="lazy" alt="logo da black doc, serviços paralegais" class="footer-img" src="./assets/imgs/Logotipo_Black_doc.png" href="#">
       </div>
       
       <div class="footer-section">
@@ -424,7 +450,7 @@
           <spam class="footer-title">REDE SOCIAL:</spam>
           <br>
           <a href="https://www.instagram.com/blackdoc.sp/" target="_blank">
-            <img src="./assets/imgs/instagram.png" alt="Instagram">
+            <img loading="lazy" src="./assets/imgs/instagram.png" alt="Instagram">
           </a>
         </div>
         <div class="footer-copy">
