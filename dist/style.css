@@ -179,7 +179,8 @@ nav.navbar {
 }
 
 .logo {
-  width: auto;
+  width: 300px;
+  height: auto;
 }
 
 footer {
@@ -233,6 +234,7 @@ header {
   flex-direction: column;
   max-width: 625px;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .servicos-section {
