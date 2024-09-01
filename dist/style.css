@@ -799,6 +799,7 @@ body {
 }
 
 .fundadores-section {
+  padding: 12px;
   background-color: var(--background-color-dark);
   width: 100%;
   min-height: 50vh;
@@ -873,7 +874,6 @@ form {
     align-items: center;
     padding: 12px;
     max-width: 100%;
-    gap: 24px;
   }
 
   .myDivLeft,
@@ -917,4 +917,14 @@ form {
 
 .fundadores-description {
   max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .myDivLeft,
+  .myDivRight {
+    order: 2;
+  }
+  .myDiv {
+    order: 1;
+  }
 }
