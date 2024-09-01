@@ -164,3 +164,55 @@ window.addEventListener("resize", () => {
 
 // Inicializa o slider
 initSlider();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const animatedElementLeft = document.querySelector(".myDivLeft");
+  const animatedElementRight = document.querySelector(".myDivRight");
+
+  function checkVisibility() {
+    const rectLeft = animatedElementLeft.getBoundingClientRect();
+    const rectRight = animatedElementRight.getBoundingClientRect();
+    const windowHeight =
+      window.innerHeight || document.documentElement.clientHeight;
+
+    // Verifica se o elemento esquerdo está visível
+    if (rectLeft.top <= windowHeight && rectLeft.bottom >= 0) {
+      animatedElementLeft.classList.add("bounceInLeft");
+      animatedElementLeft.classList.remove("hidden");
+    }
+
+    // Verifica se o elemento direito está visível
+    if (rectRight.top <= windowHeight && rectRight.bottom >= 0) {
+      animatedElementRight.classList.add("bounceInRight");
+      animatedElementRight.classList.remove("hidden");
+    }
+
+    // Remove o event listener após as animações serem executadas
+    if (
+      !animatedElementLeft.classList.contains("hidden") &&
+      !animatedElementRight.classList.contains("hidden")
+    ) {
+      window.removeEventListener("scroll", checkVisibility);
+    }
+  }
+
+  window.addEventListener("scroll", checkVisibility);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const animatedElement = document.querySelector(".myDiv");
+
+  function checkVisibility() {
+    const rect = animatedElement.getBoundingClientRect();
+    const windowHeight =
+      window.innerHeight || document.documentElement.clientHeight;
+
+    if (rect.top <= windowHeight && rect.bottom >= 0) {
+      animatedElement.classList.add("bounceInUp");
+      animatedElement.classList.remove("hidden");
+      window.removeEventListener("scroll", checkVisibility);
+    }
+  }
+
+  window.addEventListener("scroll", checkVisibility);
+});

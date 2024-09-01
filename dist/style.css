@@ -14,7 +14,7 @@ body {
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 #servicos .card {
@@ -101,8 +101,8 @@ header {
   padding: 24px;
   display: flex;
   flex-direction: column;
+  max-width: 625px;
   justify-content: flex-start;
-  max-width: 325px;
 }
 
 .servicos-section {
@@ -121,13 +121,6 @@ header {
   justify-content: flex-start;
 }
 
-.title {
-  align-self: center;
-  font-size: 2.5rem !important;
-  font-weight: 600;
-  line-height: 1.2;
-}
-
 .subtitle {
   text-align: start;
   font-size: 2rem !important;
@@ -135,7 +128,12 @@ header {
 
 .text {
   text-align: justify;
-  font-size: 1.5rem !important;
+  font-size: 1.42rem !important;
+}
+
+.card-text {
+  text-align: start;
+  font-size: 1.15rem;
 }
 
 .slider-title {
@@ -499,11 +497,13 @@ body {
     width: 75%;
     margin: 0 auto;
   }
+  .header-title {
+    color: white;
+    font-size: 2.5rem;
+  }
 
   .header-subtitle {
-    margin-top: -50px;
-    text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .footer-title {
@@ -527,8 +527,12 @@ body {
     width: calc(100% / 2); /* Exibe 2 slides por vez em telas médias */
   }
 
+  .header-title {
+    color: white;
+    font-size: 1.5rem;
+  }
+
   .header-subtitle {
-    margin-top: -40px;
     font-size: 1.2rem !important;
     font-weight: 400;
   }
@@ -554,7 +558,7 @@ body {
   }
 
   .header-subtitle {
-    margin-top: -40px;
+    color: var(--text-color-soft);
     font-size: 1.2rem !important;
     font-weight: 400;
   }
@@ -605,12 +609,7 @@ body {
     height: 4.9rem;
   }
 
-  .header-container {
-    max-width: 345px;
-  }
-
   .header-subtitle {
-    margin-top: -40px;
     font-size: 1.2rem !important;
     font-weight: 400;
   }
@@ -632,7 +631,7 @@ body {
 
   .title {
     align-self: center;
-    font-size: 2rem !important;
+    font-size: 1.7rem !important;
     font-weight: 600;
     line-height: 1.2;
     color: var(--text-color-neutral);
@@ -731,4 +730,191 @@ body {
   --background-color-light: #f6f6f6;
   --background-color-dark: #888888;
   --border-color: #d1d1d1;
+}
+
+/* Animação bounceInLeft */
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Animação bounceInRight */
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bounceInLeft {
+  animation: bounceInLeft 1s ease forwards; /* Adicione a classe bounceInLeft para ativar a animação */
+}
+
+.bounceInRight {
+  animation: bounceInRight 1s ease forwards; /* Adicione a classe bounceInRight para ativar a animação */
+}
+
+.hidden {
+  opacity: 0; /* Inicialmente, a opacidade é 0 para que o elemento esteja oculto */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+/* Estilos responsivos para mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Muda o layout para coluna em dispositivos móveis */
+    align-items: center;
+  }
+  .fundador-img {
+    width: auto;
+    height: 200px !important;
+  }
+}
+
+.fundadores-section {
+  background-color: var(--background-color-dark);
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contato-section {
+  padding: 24px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+form {
+  width: 100%;
+}
+.fundadores-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 20px;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1700px;
+  margin: auto;
+}
+
+.myDivLeft,
+.myDivRight {
+  flex: 1;
+  margin: 20px;
+  text-align: center;
+}
+
+.fundador-img {
+  width: auto;
+  height: 300px;
+}
+
+.description {
+  text-align: left;
+}
+
+.card-description {
+  background-color: white; /* Cor de fundo suave para o card */
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 15px;
+  max-width: 370px;
+}
+
+.card-description h3 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+}
+
+.card-descriptionrd p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Estilos responsivos para mobile */
+@media (max-width: 768px) {
+  .fundadores-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    max-width: 100%;
+    gap: 24px;
+  }
+
+  .myDivLeft,
+  .myDivRight {
+    width: 100%; /* Ocupar toda a largura em dispositivos móveis */
+    margin-bottom: 20px;
+  }
+}
+
+.fundadores-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Animação bounceInUp */
+@keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounceInUp {
+  animation: bounceInUp 1s ease forwards; /* Adiciona a classe bounceInUp para ativar a animação */
+}
+
+.hidden {
+  opacity: 0; /* Inicialmente, a opacidade é 0 para que o elemento esteja oculto */
+}
+
+.fundadores-description {
+  max-width: 500px;
 }

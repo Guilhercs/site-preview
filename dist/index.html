@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BlackDoc.</title>
+    <meta name="description" content="A BLACKDOC é especializada em serviços paralegais e societários, oferecendo suporte completo para a legalização de empresas em todo o Brasil." />
+    <meta name="keywords" content="serviços paralegais, legalização de empresas, regularização fiscal, abertura de empresas, encerramento de empresas" />
+
+    <title>BLACKDOC. Regularização Empresarial</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -46,8 +49,8 @@
     <!-- Banner -->
     <header class="jumbotron jumbotron-fluid text-center text-white">
       <div class="header-container">
-        <img alt="logo da black doc, serviços paralegais" class="logo" src="./assets/imgs/Logotipo_Black_doc.png" class="navbar-brand" href="#">
-      </img>
+        <h1 class="header-title"> 
+          A BLACKDOC. tem tudo o que seu negócio precisa em legalização de empresas.</h1>
       <p class="header-subtitle">
         Deixe conosco a parte operacional dos seus processos de abertura,
         alteração e encerramento!
@@ -59,7 +62,7 @@
     <section id="sobre" class="sobre-container">
       <div class="article-section">
         <article class="sobre-article">
-          <h1 class="title">O que fazemos?</h1>
+          <h2 class="title">O que fazemos?</h2>
           <p class="subtitle">Somos especialistas em regularização de empresas.</p>
           <p class="text">
             A BLACKDOC. Serviços Paralegais, é uma empresa especializada na
@@ -81,7 +84,7 @@
 
        <!-- slider -->
        <section class="slider-section">
-        <h1 class="slider-title">Algumas das empresas legalizadas pelo nosso time.</h1>
+        <h2 class="title center">Algumas das empresas legalizadas pelo nosso time.</h2>
          <div class="slider-container">
            <button class="nav-button left-button"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#999999"><path d="M400-80 0-480l400-400 56 57-343 343 343 343-56 57Z"/></svg></button> <!-- Botão Esquerda -->
              <div class="slider">
@@ -309,70 +312,115 @@
       </div>
     </section>
 
+    <!-- fundadores -->
+    <section class="fundadores-section">
+      <div class="fundadores-container">
+        <!-- Div Esquerda -->
+        <div class="myDivLeft hidden">
+          <div class="fundadores-content">
+            <img class="fundador-img" src="./assets/imgs/André Motta.png" alt="Imagem do fundador André Motta, com um sorriso e de braços cruzados. Com roupa social.">
+            <div class="description">
+              <!-- Card de Descrição -->
+              <div class="card-description">
+                <h3 class="card-title">André Motta</h3>
+                <p class="card-text">Técnico jurídico e Paralegal, especializado em Sociedades Anônimas pela FGV</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <script src="script.js"></script>
-
+        <div class="myDiv hidden">
+          <div>
+            <div>
+              <!-- Descrição -->
+              <div class="fundadores-description">
+                <h3 class="title center" style="color: white">Fundadores</h3>
+                <p class="text" style="color: white; font-weight: 400;">A BLACKDOC. foi fundada por André Motta e Ana Caroline, após anos de experiência no mercado corporativo, ambos viram a necessidade de prestar um serviço de qualidade nas áreas societária  e fiscal.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Div Direita -->
+        <div class="myDivRight hidden">
+          <div class="fundadores-content">
+            <img class="fundador-img" src="./assets/imgs/Ana Caroline Lourenço.png" alt="Imagem da fundadora Ana Caroline Lourenço, com um sorriso e de braços cruzados. Com roupa social.">
+            <div class="description">
+              <!-- Card de Descrição -->
+              <div class="card-description">
+                <h3 class="card-title">Ana Caroline Lourenço</h3>
+                <p class="card-text">Advogada e consultora em Direito empresarial e Trabalhista</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
     <!-- Contato -->
-    <section id="contato" class="container my-5">
+    <section id="contato" class="contato-section my-5">
       <h2 class="text-center mb-4">Entre em contato</h2>
       <form action="https://formspree.io/f/xdknbzwn"
       method="POST">
-        
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputName">Nome</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputName"
-              name="nome"
-              placeholder="Seu nome"
-            />
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputEmail">Email</label>
-            <input
-              name="email"
-              type="email"
-              class="form-control"
-              id="inputEmail"
-              placeholder="Seu email"
-            />
-          </div>
+      
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputName">Nome</label>
+          <input
+          type="text"
+          class="form-control"
+          id="inputName"
+          name="nome"
+          placeholder="Seu nome"
+          />
         </div>
-        <div class="form-group">
-          <label for="inputMessage">Mensagem</label>
-          <textarea name="message"  class="form-control" id="inputMessage" rows="4"></textarea>
+        <div class="form-group col-md-6">
+          <label for="inputEmail">Email</label>
+          <input
+          name="email"
+          type="email"
+          class="form-control"
+          id="inputEmail"
+          placeholder="Seu email"
+          />
         </div>
-        <button type="submit" class="btn btn-card">Enviar</button>
-      </form>
-    </section>
-
-    <section class="whatsapp-button">
-      <a href="https://wa.me/5511949224857" target="_blank">
-        <img class="whatsapp-image" src="./assets/imgs/logo-wtapp.webp" alt="WhatsApp">
+      </div>
+      <div class="form-group">
+        <label for="inputMessage">Mensagem</label>
+        <textarea name="message"  class="form-control" id="inputMessage" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn btn-card">Enviar</button>
+    </form>
+  </section>
+  
+  <section class="whatsapp-button">
+    <a href="https://wa.me/5511949224857" target="_blank">
+      <img class="whatsapp-image" src="./assets/imgs/logo-wtapp.webp" alt="WhatsApp">
     </a>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-white text-center py-3">
-      <div class="footer-container">
-        <div class="footer-logo">
-          <img alt="logo da black doc, serviços paralegais" class="footer-img" src="./assets/imgs/Logotipo_Black_doc.png" href="#">
-        </div>
-        
-        <div class="footer-section">
-          <spam class="footer-title">ENDEREÇO:</spam>
-          <p class="footer-description">Alameda Santos, 415 - Vila Mariana, São Paulo - SP</p>
-        </div>
+  </section>
+  
+  
+  
+  <!-- Footer -->
+  <footer class="footer text-white text-center py-3">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img alt="logo da black doc, serviços paralegais" class="footer-img" src="./assets/imgs/Logotipo_Black_doc.png" href="#">
+      </div>
       
-        <div class="footer-section">
-          <spam class="footer-title">ENTRE EM CONTATO:</spam>
-          <p class="footer-description">contatoblackdoc@gmail.com</p>
-          <p class="footer-description">(11) 94922-4857</p>
-        </div>
+      <div class="footer-section">
+        <spam class="footer-title">ENDEREÇO:</spam>
+        <p class="footer-description">Alameda Santos, 415 - Vila Mariana, São Paulo - SP</p>
+      </div>
       
-        <div class="footer-section">
+      <div class="footer-section">
+        <spam class="footer-title">ENTRE EM CONTATO:</spam>
+        <p class="footer-description">contatoblackdoc@gmail.com</p>
+        <p class="footer-description">(11) 94922-4857</p>
+      </div>
+      
+      <div class="footer-section">
           <spam class="footer-title">REDE SOCIAL:</spam>
           <br>
           <a href="https://www.instagram.com/blackdoc.sp/" target="_blank">
@@ -380,12 +428,12 @@
           </a>
         </div>
         <div class="footer-copy">
-          <p class="text-footer">&copy; 2024 BlackDoc. Todos os direitos reservados.</p>
+          <p class="text-footer">&copy; 2024 BLACKDOC. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
     
-
+    
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -393,4 +441,5 @@
     <!-- Custom JS -->
     <script src="./script.js"></script>
   </body>
-</html>
+  </html>
+  
