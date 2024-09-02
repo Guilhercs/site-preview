@@ -132,8 +132,13 @@ table {
 body {
   font-family: "Arial", sans-serif;
   overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
 }
 
+/* início nav e header */
 .jumbotron {
   margin-bottom: 0px !important;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
@@ -145,18 +150,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-
-#servicos .card {
-  border: none;
-  transition: transform 0.3s ease;
-  border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  min-height: 19.6rem;
-}
-
-#servicos .card:hover {
-  transform: translateY(-10px);
 }
 
 nav.navbar {
@@ -183,24 +176,6 @@ nav.navbar {
   height: auto;
 }
 
-footer {
-  background-image: linear-gradient(
-    101deg,
-    rgb(136, 136, 136, 2),
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 1)
-  ) !important;
-  min-height: 30vh;
-  display: flex;
-  align-content: center;
-  align-items: stretch;
-  justify-content: center;
-  flex-direction: column;
-}
-
-footer p {
-  margin: 0;
-}
 header {
   height: calc(100vh);
 }
@@ -208,6 +183,16 @@ header {
   min-height: 75px;
 }
 
+.header-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: 625px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* início sobre e servicos */
 .article-section {
   display: flex;
   align-items: center;
@@ -228,15 +213,6 @@ header {
   text-align: justify;
 }
 
-.header-container {
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  max-width: 625px;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .servicos-section {
   padding-top: 100px;
   min-height: 100vh;
@@ -251,6 +227,18 @@ header {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+}
+
+#servicos .card {
+  border: none;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-height: 19.6rem;
+}
+
+#servicos .card:hover {
+  transform: translateY(-10px);
 }
 
 .subtitle {
@@ -343,10 +331,10 @@ li {
 }
 
 .card-content {
-  max-height: 155px; /* Define a altura inicial visível */
-  overflow: hidden; /* Oculta o conteúdo que excede a altura */
+  max-height: 155px;
+  overflow: hidden;
   position: relative;
-  transition: max-height 0.5s ease-out; /* Adiciona transição suave */
+  transition: max-height 0.5s ease-out;
 }
 
 .fade-out {
@@ -354,13 +342,13 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 20px; /* Altura do efeito de degradação */
+  height: 20px;
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 1)
-  ); /* Gradiente de fundo */
-  pointer-events: none; /* Permite clicar no botão através da área de gradiente */
+  );
+  pointer-events: none;
 }
 
 .card-body {
@@ -428,13 +416,6 @@ button.btn:focus {
   justify-content: center;
   z-index: 1000;
   transition: background-color 0.3s;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: Arial, sans-serif;
 }
 
 .slider-container {
@@ -937,4 +918,23 @@ form {
 
 .fundadores-description {
   max-width: 500px;
+}
+
+footer {
+  background-image: linear-gradient(
+    101deg,
+    rgb(136, 136, 136, 2),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 1)
+  ) !important;
+  min-height: 30vh;
+  display: flex;
+  align-content: center;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
 }
