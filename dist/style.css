@@ -791,7 +791,7 @@ button.btn:focus {
   padding: 12px;
   background-color: var(--background-color-dark);
   width: 100%;
-  min-height: 50vh;
+  min-height: 60vh;
   display: flex;
   justify-content: space-between;
 }
