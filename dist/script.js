@@ -257,3 +257,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", checkVisibility);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function (event) {
+    if (!form.checkValidity()) {
+      event.preventDefault();
+      event.stopPropagation();
+      // Itera sobre todos os campos do formulário
+      form.classList.add("was-validated");
+    } else {
+      form.classList.remove("was-validated");
+    }
+  });
+
+  // Validação para campos individuais
+  form.querySelectorAll("input, textarea").forEach(function (input) {
+    input.addEventListener("input", function () {
+      if (input.checkValidity()) {
+        input.classList.remove("is-invalid");
+        input.classList.add("is-valid");
+      } else {
+        input.classList.remove("is-valid");
+        input.classList.add("is-invalid");
+      }
+    });
+  });
+});

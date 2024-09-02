@@ -380,21 +380,23 @@
   <!-- Contato -->
   <section id="contato" class="contato-section my-5">
     <h2 class="text-center mb-4">Entre em contato</h2>
-    <form action="https://formspree.io/f/xdknbzwn" method="POST">
-
+    <form id="contactForm" action="https://formspree.io/f/xdknbzwn" method="POST" novalidate>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputName">Nome</label>
-          <input type="text" class="form-control" id="inputName" name="nome" placeholder="Seu nome" />
+          <input type="text" class="form-control" id="inputName" name="nome" placeholder="Seu nome" required />
+          <div class="invalid-feedback">Por favor, insira seu nome.</div>
         </div>
         <div class="form-group col-md-6">
           <label for="inputEmail">Email</label>
-          <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Seu email" />
+          <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Seu email" required />
+          <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
         </div>
       </div>
       <div class="form-group">
         <label for="inputMessage">Mensagem</label>
-        <textarea name="message" class="form-control" id="inputMessage" rows="4"></textarea>
+        <textarea name="message" class="form-control" id="inputMessage" rows="4" required></textarea>
+        <div class="invalid-feedback">Por favor, insira sua mensagem.</div>
       </div>
       <button type="submit" class="btn btn-card">Enviar</button>
     </form>
