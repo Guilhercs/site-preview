@@ -642,71 +642,6 @@ button.btn:focus {
   margin-top: 20px; /* Adiciona espaço acima do texto de copyright */
 }
 
-@media (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: 1fr; /* Alinha os itens em uma única coluna em telas menores */
-  }
-
-  .footer-copy {
-    grid-column: 1; /* Mantém o footer-copy ocupando a largura total em telas menores */
-  }
-  .slide {
-    width: calc(100% / 2); /* Exibe 2 slides por vez em telas médias */
-  }
-
-  .sobre-container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .article-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .header-subtitle {
-    color: var(--text-color-soft);
-    font-size: 1.2rem !important;
-    font-weight: 400;
-  }
-
-  .footer {
-    background-image: linear-gradient(
-      180deg,
-      rgb(136, 136, 136, 1),
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 1)
-    ) !important;
-    min-height: 30vh;
-    flex-direction: column; /* Em telas menores, empilhe os itens verticalmente */
-  }
-
-  .footer-container {
-    display: flex;
-    align-content: center;
-    flex-direction: column !important;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 16px;
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
-  }
-
-  .container {
-    flex-direction: column; /* Muda o layout para coluna em dispositivos móveis */
-    align-items: center;
-  }
-  .fundador-img {
-    width: auto;
-    height: 200px !important;
-  }
-}
-
 :root {
   --text-color-soft: #f6f6f6;
   --text-color-neutral: #000000;
@@ -856,30 +791,6 @@ form {
   color: #333;
 }
 
-/* Estilos responsivos para mobile */
-@media (max-width: 1059px) {
-  .fundadores-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 12px;
-    max-width: 100%;
-  }
-
-  .myDivLeft,
-  .myDivRight {
-    width: 100%; /* Ocupar toda a largura em dispositivos móveis */
-    margin-bottom: 20px;
-  }
-
-  .myDivLeft,
-  .myDivRight {
-    order: 2;
-  }
-  .myDiv {
-    order: 1;
-  }
-}
-
 .fundadores-content {
   display: flex;
   flex-direction: column;
@@ -933,4 +844,143 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+/* Tablets em modo retrato (até 768px de largura) */
+@media only screen and (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-copy {
+    grid-column: 1;
+  }
+  .slide {
+    width: calc(100% / 2);
+  }
+
+  .sobre-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .article-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .header-subtitle {
+    color: var(--text-color-soft);
+    font-size: 1.2rem !important;
+    font-weight: 400;
+  }
+
+  .footer {
+    background-image: linear-gradient(
+      180deg,
+      rgb(136, 136, 136, 1),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1)
+    ) !important;
+    min-height: 30vh;
+    flex-direction: column;
+  }
+
+  .footer-container {
+    display: flex;
+    align-content: center;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .fundador-img {
+    width: auto;
+    height: 200px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Estilos para tablets em modo paisagem */
+  .fundador-img {
+    width: auto;
+    height: 200px !important;
+  }
+
+  .row {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .slide {
+    width: calc(100% / 2) !important;
+  }
+
+  .fundadores-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    max-width: 100%;
+  }
+
+  .myDivLeft,
+  .myDivRight {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .myDivLeft,
+  .myDivRight {
+    order: 2;
+  }
+  .myDiv {
+    order: 1;
+  }
+
+  .fundador-img {
+    width: auto;
+    height: 200px !important;
+  }
+}
+
+/* Laptops grandes e desktops (até 1440px de largura) */
+@media only screen and (max-width: 1440px) {
+  /* Estilos para laptops grandes e desktops */
+  .fundador-img {
+    width: auto;
+    height: 215px !important;
+  }
+}
+
+/* Monitores grandes (mais de 1440px de largura) */
+@media only screen and (min-width: 1441px) {
+  /* Estilos para monitores grandes */
+}
+
+.hidden-card-btn {
+  display: none !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1128px) {
+  .hidden-card-btn {
+    display: inline-block !important;
+  }
 }
