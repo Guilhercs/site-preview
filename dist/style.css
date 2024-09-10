@@ -129,6 +129,10 @@ table {
 }
 
 /* Estilos customizados */
+html {
+  scroll-padding-top: 111px;
+}
+
 body {
   font-family: "Arial", sans-serif;
   overflow-x: hidden !important;
@@ -849,14 +853,14 @@ footer p {
 /* Tablets em modo retrato (até 768px de largura) */
 @media only screen and (max-width: 768px) {
   .footer-container {
+    .slide {
+      width: 100% !important; /* Exibe 1 slide por vez em telas pequenas */
+    }
     grid-template-columns: 1fr;
   }
 
   .footer-copy {
     grid-column: 1;
-  }
-  .slide {
-    width: calc(100% / 2);
   }
 
   .sobre-container {
@@ -931,7 +935,7 @@ footer p {
 
 @media only screen and (max-width: 1200px) {
   .slide {
-    width: calc(100% / 2) !important;
+    width: calc(100% / 2);
   }
 
   .fundadores-container {
