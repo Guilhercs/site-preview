@@ -935,7 +935,7 @@ footer p {
 
 @media only screen and (max-width: 1200px) {
   .slide {
-    width: calc(100% / 2);
+    width: calc(100% / 3);
   }
 
   .fundadores-container {
