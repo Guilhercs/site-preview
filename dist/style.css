@@ -208,7 +208,7 @@ header {
 }
 
 .article-img {
-  max-width: 100%;
+  max-width: 41%;
   height: auto;
   display: block;
 }
@@ -852,10 +852,11 @@ footer p {
 
 /* Tablets em modo retrato (até 768px de largura) */
 @media only screen and (max-width: 768px) {
+  .slide {
+    width: calc(100% / 2) !important;
+  }
+
   .footer-container {
-    .slide {
-      width: 100% !important; /* Exibe 1 slide por vez em telas pequenas */
-    }
     grid-template-columns: 1fr;
   }
 
@@ -917,6 +918,10 @@ footer p {
 }
 
 @media only screen and (max-width: 1024px) {
+  .slide {
+    width: calc(100% / 3) !important;
+  }
+
   /* Estilos para tablets em modo paisagem */
   .fundador-img {
     width: auto;
