@@ -1,11 +1,7 @@
 User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Allow: /public/
+Allow: /public/
 
-Disallow: /admin/          # Exemplo: diretório administrativo
-Disallow: /login           # Exemplo: página de login, caso exista
-Disallow: /private/        # Exemplo: diretório com conteúdo privado
-
-# Permitir o rastreamento de todo o conteúdo público
-Allow: /
-
-# Indicar o local do sitemap para facilitar a indexação
 Sitemap: https://www.legalizacaoblackdoc.bohr.io/sitemap.xml
