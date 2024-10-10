@@ -91,6 +91,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,17 +106,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,6 +128,7 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -145,7 +151,7 @@ body {
 /* início nav e header */
 .jumbotron {
   margin-bottom: 0px !important;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)),
     url("./assets/imgs/0cd01c2ffb5a215193d1e8e186eb4fff.jpg");
   transform: rotate(180);
   background-size: cover;
@@ -183,15 +189,17 @@ nav.navbar {
 header {
   height: calc(100vh);
 }
+
 .header {
   min-height: 75px;
 }
 
 .header-container {
   padding: 24px;
+  padding-left: 90px;
   display: flex;
   flex-direction: column;
-  max-width: 625px;
+  max-width: 830px;
   justify-content: flex-start;
   align-items: center;
 }
@@ -308,6 +316,7 @@ article {
   overflow: hidden;
   transition: max-height 0.8s ease;
 }
+
 .card-content.expanded {
   max-height: 1500px;
 }
@@ -378,6 +387,7 @@ button.btn-card {
 button.btn:hover {
   color: var(--text-color-soft) !important;
 }
+
 button.btn:focus {
   color: var(--text-color-soft) !important;
   outline: none;
@@ -434,18 +444,21 @@ button.btn:focus {
   display: flex;
   transition: transform 0.3s ease;
   width: 100%;
-  will-change: transform; /* Melhora a performance do slider */
+  will-change: transform;
+  /* Melhora a performance do slider */
 }
 
 .slide {
-  flex: 0 0 auto; /* Cada slide não irá crescer ou encolher */
+  flex: 0 0 auto;
+  /* Cada slide não irá crescer ou encolher */
   box-sizing: border-box;
   padding: 10px;
 }
 
 .slide img {
   width: 100%;
-  height: auto; /* Mantém a proporção das imagens */
+  height: auto;
+  /* Mantém a proporção das imagens */
   display: block;
   border-radius: 10px;
 }
@@ -475,18 +488,24 @@ button.btn:focus {
 /* Media queries para responsividade */
 @media (min-width: 1160px) {
   .slide {
-    width: calc(100% / 3); /* Exibe 3 slides por vez em telas grandes */
+    width: calc(100% / 3);
+    /* Exibe 3 slides por vez em telas grandes */
   }
+
   .nav-button {
     color: black;
   }
+
   .slider-section {
     width: 75%;
     margin: 0 auto;
   }
+
   .header-title {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
+    text-align: left;
+    font-weight: 700;
   }
 
   .header-subtitle {
@@ -512,7 +531,7 @@ button.btn:focus {
 
   .header-title {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .header-subtitle {
@@ -523,8 +542,10 @@ button.btn:focus {
 
 @media (max-width: 480px) {
   .slide {
-    width: 100% !important; /* Exibe 1 slide por vez em telas pequenas */
+    width: 100% !important;
+    /* Exibe 1 slide por vez em telas pequenas */
   }
+
   .slider-container {
     margin: 0;
     width: 100%;
@@ -610,25 +631,29 @@ button.btn:focus {
 }
 
 .footer {
-  color: #fff; /* Cor do texto branco */
+  color: #fff;
+  /* Cor do texto branco */
   text-align: center;
   padding: 20px;
 }
 
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(
-    4,
-    1fr
-  ); /* Cria quatro colunas de tamanho igual */
-  gap: 20px; /* Espaçamento entre os itens do grid */
-  align-items: center; /* Centraliza os itens verticalmente */
-  max-width: 1200px; /* Limita a largura máxima */
-  margin: 0 auto; /* Centraliza horizontalmente o grid */
+  grid-template-columns: repeat(4, 1fr);
+  /* Cria quatro colunas de tamanho igual */
+  gap: 20px;
+  /* Espaçamento entre os itens do grid */
+  align-items: center;
+  /* Centraliza os itens verticalmente */
+  max-width: 1200px;
+  /* Limita a largura máxima */
+  margin: 0 auto;
+  /* Centraliza horizontalmente o grid */
 }
 
 .footer-logo {
-  grid-column: 1; /* Coloca o logo na primeira coluna */
+  grid-column: 1;
+  /* Coloca o logo na primeira coluna */
 }
 
 .footer-img {
@@ -637,13 +662,16 @@ button.btn:focus {
 }
 
 .footer-section {
-  grid-column: auto; /* Mantém as seções nas colunas seguintes */
+  grid-column: auto;
+  /* Mantém as seções nas colunas seguintes */
 }
 
 .footer-copy {
-  grid-column: 1 / -1; /* Faz com que o footer-copy ocupe toda a largura do grid */
+  grid-column: 1 / -1;
+  /* Faz com que o footer-copy ocupe toda a largura do grid */
   text-align: center;
-  margin-top: 20px; /* Adiciona espaço acima do texto de copyright */
+  margin-top: 20px;
+  /* Adiciona espaço acima do texto de copyright */
 }
 
 :root {
@@ -662,13 +690,16 @@ button.btn:focus {
     opacity: 0;
     transform: translateX(-200px);
   }
+
   60% {
     opacity: 1;
     transform: translateX(30px);
   }
+
   80% {
     transform: translateX(-10px);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -680,28 +711,34 @@ button.btn:focus {
     opacity: 0;
     transform: translateX(200px);
   }
+
   60% {
     opacity: 1;
     transform: translateX(-30px);
   }
+
   80% {
     transform: translateX(10px);
   }
+
   100% {
     transform: translateX(0);
   }
 }
 
 .bounceInLeft {
-  animation: bounceInLeft 1s ease forwards; /* Adicione a classe bounceInLeft para ativar a animação */
+  animation: bounceInLeft 1s ease forwards;
+  /* Adicione a classe bounceInLeft para ativar a animação */
 }
 
 .bounceInRight {
-  animation: bounceInRight 1s ease forwards; /* Adicione a classe bounceInRight para ativar a animação */
+  animation: bounceInRight 1s ease forwards;
+  /* Adicione a classe bounceInRight para ativar a animação */
 }
 
 .hidden {
-  opacity: 0; /* Inicialmente, a opacidade é 0 para que o elemento esteja oculto */
+  opacity: 0;
+  /* Inicialmente, a opacidade é 0 para que o elemento esteja oculto */
 }
 
 .container {
@@ -749,6 +786,7 @@ button.btn:focus {
 form {
   width: 100%;
 }
+
 .fundadores-container {
   display: flex;
   justify-content: space-between;
@@ -777,7 +815,8 @@ form {
 }
 
 .card-description {
-  background-color: white; /* Cor de fundo suave para o card */
+  background-color: white;
+  /* Cor de fundo suave para o card */
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 15px;
@@ -807,24 +846,29 @@ form {
     opacity: 0;
     transform: translateY(200px);
   }
+
   60% {
     opacity: 1;
     transform: translateY(-20px);
   }
+
   80% {
     transform: translateY(10px);
   }
+
   100% {
     transform: translateY(0);
   }
 }
 
 .bounceInUp {
-  animation: bounceInUp 1s ease forwards; /* Adiciona a classe bounceInUp para ativar a animação */
+  animation: bounceInUp 1s ease forwards;
+  /* Adiciona a classe bounceInUp para ativar a animação */
 }
 
 .hidden {
-  opacity: 0; /* Inicialmente, a opacidade é 0 para que o elemento esteja oculto */
+  opacity: 0;
+  /* Inicialmente, a opacidade é 0 para que o elemento esteja oculto */
 }
 
 .fundadores-description {
@@ -852,6 +896,17 @@ footer p {
 
 /* Tablets em modo retrato (até 768px de largura) */
 @media only screen and (max-width: 768px) {
+  .header-container {
+    padding-left: 24px !important;
+  }
+
+  .header-title {
+    color: white;
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 700;
+  }
+
   .slide {
     width: calc(100% / 2) !important;
   }
@@ -871,6 +926,7 @@ footer p {
     justify-content: center;
     flex-direction: column;
   }
+
   .article-section {
     display: flex;
     align-items: center;
@@ -911,6 +967,7 @@ footer p {
     flex-direction: column;
     align-items: center;
   }
+
   .fundador-img {
     width: auto;
     height: 200px !important;
@@ -960,6 +1017,7 @@ footer p {
   .myDivRight {
     order: 2;
   }
+
   .myDiv {
     order: 1;
   }
