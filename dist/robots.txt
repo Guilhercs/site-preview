@@ -4,4 +4,4 @@ Disallow: /private/
 Allow: /public/
 Allow: /public/
 
-Sitemap: https://www.legalizacaoblackdoc.com.br/sitemap.xml
+Sitemap: https://legalizacaoblackdoc.com.br/sitemap.xml

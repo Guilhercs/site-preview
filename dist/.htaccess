@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Redireciona de HTTP para HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://legalizacaoblackdoc.com.br/$1 [L,R=301]
+
+# Redireciona de www para sem www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://legalizacaoblackdoc.com.br/$1 [L,R=301]

@@ -1,3 +1,43 @@
+function applySmallScreenStyles() {
+  // Verifica se a largura da tela é menor que 480px
+  if (window.innerWidth < 480) {
+    // Seleciona o elemento com a classe 'slide'
+    const slides = document.querySelectorAll(".slide");
+
+    // Aplica o estilo necessário a todos os slides
+    slides.forEach((slide) => {
+      slide.style.width = "100%";
+      // Se você quiser adicionar mais propriedades, pode fazer isso aqui
+      // Por exemplo: slide.style.height = "auto";
+    });
+  }
+}
+
+function applyMediumScreenStyles() {
+  // Verifica se a largura da tela está entre 481px e 780px
+  if (window.innerWidth >= 481 && window.innerWidth <= 780) {
+    // Seleciona todos os elementos com a classe 'slide'
+    const slides = document.querySelectorAll(".slide");
+
+    // Aplica o estilo necessário a todos os slides
+    slides.forEach((slide) => {
+      slide.style.width = "calc(100% / 2)";
+    });
+  }
+}
+
+// Executa a função ao carregar a página
+window.onload = applyMediumScreenStyles;
+
+// Executa a função novamente se a janela for redimensionada
+window.onresize = applyMediumScreenStyles;
+
+// Executa a função ao carregar a página
+window.onload = applySmallScreenStyles;
+
+// Executa a função novamente se a janela for redimensionada
+window.onresize = applySmallScreenStyles;
+
 document.addEventListener("DOMContentLoaded", function () {
   const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
 
@@ -9,8 +49,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetElement = document.querySelector(targetId);
 
       if (targetElement) {
+        const scrollPaddingTop = 90;
+        const targetPosition = targetElement.offsetTop - scrollPaddingTop;
+
         window.scrollTo({
-          top: targetElement.offsetTop,
+          top: targetPosition,
           behavior: "smooth",
         });
       }
